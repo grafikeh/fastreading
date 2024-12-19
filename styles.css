@@ -1,0 +1,58 @@
+/* styles.css */
+
+/* Genel Gövde Stilleri */
+body {
+  background-color: #f8f9fa; /* Bootstrap'ın açık gri arka plan rengi */
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Başlık Stilleri */
+h1 {
+  color: #343a40; /* Koyu gri başlık rengi */
+}
+
+/* Kelime Gösterim Alanı */
+#word-display {
+  font-size: 48px; /* Kelime boyutu */
+  height: 60px; /* Yükseklik ayarı */
+  display: flex; /* Flexbox ile hizalama */
+  align-items: center; /* Dikey merkezleme */
+  justify-content: center; /* Yatay merkezleme */
+  color: #495057; /* İkincil renk */
+  transition: opacity 0.3s ease; /* Geçiş efekti */
+}
+
+/* Kelime Gösterim Alanının Gizlenmesi */
+#word-display.hidden {
+  opacity: 0; /* Gizleme efekti */
+}
+
+/* Zaman Bilgileri Stili */
+#time-info {
+  font-size: 14px; /* Zaman bilgisi boyutu */
+  color: #6c757d; /* Bootstrap'ın muted rengi */
+}
+
+#time-info p {
+  margin: 5px 0; /* Paragraf aralığı */
+}
+
+/* Toplam Kelime ve Okunan Kelime Stilleri */
+#total-words,
+#words-read {
+  font-weight: bold; /* Kalın yazı */
+  color: #495057; /* İkincil renk */
+}
+
+/* Progress Bar Stili (İsteğe Bağlı) */
+.progress {
+  height: 25px;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.progress-bar {
+  font-size: 14px;
+  line-height: 25px;
+  transition: width 0.4s ease; /* Daha yumuşak geçiş */
+}
